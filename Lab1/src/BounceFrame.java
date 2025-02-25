@@ -70,7 +70,7 @@ public class BounceFrame extends JFrame {
         }
     }
 
-    public void incrementScore(){
+    public synchronized void incrementScore(){
         score = score + 1;
         scoreLabel.setText("Score: " + score);
     }
